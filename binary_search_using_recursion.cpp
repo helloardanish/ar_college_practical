@@ -1,19 +1,19 @@
 #include<stdio.h>
 int main(){
 
-    int a[10],i,n,m,c,l,u;
-
+    int a[100],i,n,m,c,l,u;
+    //what is the size of the array or the no of elements in array
     printf("Enter the size of an array: ");
+    //storing the entered value in n variable
     scanf("%d",&n);
-
+    //insert the number in array list
     printf("Enter the elements of the array: " );
     for(i=0;i<n;i++){
          scanf("%d",&a[i]);
     }
-
+    //enter the number you want to search
     printf("Enter the number to be search: ");
     scanf("%d",&m);
-
     l=0,u=n-1;
     c=binary(a,n,m,l,u);
     if(c==0)
@@ -23,7 +23,7 @@ int main(){
 
     return 0;
  }
-
+//using mathematical logic binary search
 int binary(int a[],int n,int m,int l,int u){
 
      int mid,c=0;
