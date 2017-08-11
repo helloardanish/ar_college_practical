@@ -1,0 +1,22 @@
+#for opening root command in mysql
+mysql -u root -p -h 127.0.0.1
+#for seeing how many databases
+show databases;
+#for creating new databases
+create database databasename;
+#using the database you created
+use databasename;
+#creating table in the database
+CREATE TABLE Persons
+
+(
+roll INT,
+LastName VARCHAR(20),
+FirstName VARCHAR(20),
+Address VARCHAR(20),
+city VARCHAR(20),
+backlogs VARCHAR(50),
+lst_yr_prcnt INT(10)
+);
+#insert information in tables
+INSERT INTO TABLE table_name (roll, city) VALUES (1554510001,'delhi');
