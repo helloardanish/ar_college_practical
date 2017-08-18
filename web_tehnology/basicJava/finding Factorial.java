@@ -1,3 +1,6 @@
+/*
+To find the factorial of a java
+*/
 import java.util.Scanner;
  
 class Factorial
