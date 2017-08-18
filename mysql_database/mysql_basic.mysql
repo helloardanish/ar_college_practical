@@ -37,3 +37,7 @@ ALTER TABLE tbl_Country
   DROP COLUMN CountryName;
 #for updating table
 UPDATE my_table WHERE id=101 SET name='a r';
+#using condition WHERE
+SELECT * FROM tableName WHERE condition;
+SELECT * FROM `movies` WHERE `category_id` = 2 AND `year_released` = 2008;
+SELECT * FROM std_detail WHERE prv_per > 70 AND back_status = 'none';
