@@ -41,3 +41,9 @@ UPDATE my_table WHERE id=101 SET name='a r';
 SELECT * FROM tableName WHERE condition;
 SELECT * FROM `movies` WHERE `category_id` = 2 AND `year_released` = 2008;
 SELECT * FROM std_detail WHERE prv_per > 70 AND back_status = 'none';
+#The Maximum Value for a Column
+SELECT MAX(column_name) FROM table_name;
+#for minimum value
+SELECT MIN(column_name) FROM tabele_name;
+#for finding the average
+SELECT AVG(column_name) FROM tabele_name;
