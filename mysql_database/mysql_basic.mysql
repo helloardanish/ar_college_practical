@@ -20,3 +20,20 @@ lst_yr_prcnt INT(10)
 );
 #insert information in tables
 INSERT INTO TABLE table_name (roll, city) VALUES (1554510001,'delhi');
+OR
+INSERT INTO table_name (roll, city) VALUES (1554510001,'delhi');
+#for knowing the data types in table
+SHOW FIELDS FROM table_name;
+#creating table in anothe way
+CREATE TABLE tbl_Country
+(
+  CountryId INT NOT NULL AUTO_INCREMENT,
+  IsDeleted bit,
+  PRIMARY KEY (CountryId) 
+);
+#to delete the sql column
+ALTER TABLE tbl_Country
+  DROP COLUMN IsDeleted,
+  DROP COLUMN CountryName;
+#for updating table
+UPDATE my_table WHERE id=101 SET name='a r';
